@@ -1,6 +1,6 @@
 import React, { FunctionComponent, Fragment } from 'react';
 
-type LayoutProps = {  };
+type LayoutProps = {};
 
 const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
   return (

@@ -14,11 +14,11 @@ const Col: FunctionComponent<ColProps> = ({ className, size, children, ...otherP
     maxWidth: { [key: string]: any };
     width: { [key: string]: any };
   } = {
-    flexGrow: { default: 1 },
-    flexShrink: { default: 'unset' },
-    flexBasis: { default: 0 },
-    maxWidth: { default: '100%' },
-    width: { default: '100%' }
+    flexGrow: { _: 1 },
+    flexShrink: { _: 'unset' },
+    flexBasis: { _: 0 },
+    maxWidth: { _: '100%' },
+    width: { _: '100%' }
   };
 
   console.log({ size });
@@ -57,8 +57,8 @@ const Col: FunctionComponent<ColProps> = ({ className, size, children, ...otherP
 };
 
 Col.defaultProps = {
-  size: { default: 'unset' },
-  position: { default: 'relative' }
+  size: { _: 'unset' },
+  position: { _: 'relative' }
 };
 
 export default Col;
