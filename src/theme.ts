@@ -5,8 +5,6 @@ const breakpoints = {
   xl: '1920px'
 };
 
-// =['600px', '1024px', '1280px', '1920px'];
-
 const theme = {
   gutter: '0.5rem',
   breakpoints,

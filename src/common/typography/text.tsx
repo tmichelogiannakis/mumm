@@ -5,11 +5,6 @@ import { typography, space, layout, variant, TypographyProps, SpaceProps, Layout
 
 type TextProps = TypographyProps & SpaceProps & LayoutProps & { className?: string; textVariant?: 'large' | 'normal' | 'small' };
 
-/* const textSizeVariant = variant({
-  scale: 'textSizeVariants',
-  prop: 'textSizeVariant'
-}); */
-
 const Text: FunctionComponent<TextProps> = styled('div', {
   shouldForwardProp
 })(
