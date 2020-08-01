@@ -2,14 +2,18 @@ import React from 'react';
 import { ThemeProvider } from 'emotion-theming';
 import theme from './theme';
 import Layout from './common/layout/Layout';
+import Dish from './dish/Dish';
+
+const dishProps = {
+  title: 'Burger',
+  description: 'Diam risus, ab vero id hic, blanditiis, sit, cras aliquam cupiditate provident!'
+};
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
+        <Dish {...dishProps} />
       </Layout>
     </ThemeProvider>
   );
