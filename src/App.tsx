@@ -3,11 +3,7 @@ import { ThemeProvider } from 'emotion-theming';
 import theme from './theme';
 import Layout from './common/layout/Layout';
 import Dish from './dish/Dish';
-
-const dishProps = {
-  title: 'Burger',
-  description: 'Diam risus, ab vero id hic, blanditiis, sit, cras aliquam cupiditate provident!'
-};
+import dishProps from './data/dish';
 
 function App() {
   return (
