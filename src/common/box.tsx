@@ -9,13 +9,15 @@ import {
   flexbox,
   border,
   color,
+  background,
   TypographyProps,
   SpaceProps,
   LayoutProps,
   PositionProps,
   FlexboxProps,
   BorderProps,
-  ColorProps
+  ColorProps,
+  BackgroundProps
 } from 'styled-system';
 
 export type BoxProps = TypographyProps &
@@ -24,10 +26,11 @@ export type BoxProps = TypographyProps &
   PositionProps &
   FlexboxProps &
   BorderProps &
-  ColorProps & { className?: string };
+  ColorProps &
+  BackgroundProps & { className?: string };
 
 const Box: FunctionComponent<BoxProps> = styled('div', {
   shouldForwardProp
-})(typography, space, layout, position, flexbox, border, color) as FunctionComponent<BoxProps>;
+})(typography, space, layout, position, flexbox, border, color, background) as FunctionComponent<BoxProps>;
 
 export default Box;
