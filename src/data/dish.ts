@@ -55,7 +55,7 @@ export default {
         {
           code: '2.2',
           name: 'Chicken',
-          price: 0,
+          price: 0.25,
           selected: false,
           shortage: false,
           extra: null,
@@ -76,7 +76,7 @@ export default {
         {
           code: '3.1',
           name: 'Lettuce',
-          price: 0,
+          price: 0.1,
           selected: true,
           shortage: false,
           extra: null,
@@ -85,7 +85,7 @@ export default {
         {
           code: '3.2',
           name: 'Tomato',
-          price: 0,
+          price: 0.15,
           selected: true,
           shortage: false,
           extra: null,
@@ -94,7 +94,7 @@ export default {
         {
           code: '3.3',
           name: 'Sauce',
-          price: 0,
+          price: 0.2,
           selected: true,
           shortage: false,
           extra: null,
