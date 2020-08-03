@@ -8,10 +8,11 @@ const breakpoints = {
 const theme = {
   gutter: '0.5rem',
   breakpoints,
+  borderRadius: '.25rem',
   fontWeights: { normal: 400, bold: 700 },
   textVariants: {
     large: {
-      fontSize: '1rem',
+      fontSize: '1.25rem',
       lineHeight: 1.5
     },
     normal: {
