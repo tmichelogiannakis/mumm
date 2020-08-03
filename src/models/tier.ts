@@ -7,17 +7,19 @@ export interface Tier {
   shortage: boolean;
   dependent_options: string[];
   free_options: number;
-  options: {
-    code: string | number;
-    name: string;
+  options: TierOption[];
+}
+
+export interface TierOption {
+  code: string;
+  name: string;
+  price: number;
+  selected: boolean;
+  shortage: boolean;
+  extra: any | null;
+  dependencies: {
+    code: string;
     price: number;
-    selected: boolean;
-    shortage: boolean;
-    extra: any | null;
-    dependencies: {
-      code: string;
-      price: number;
-      enabled: boolean;
-    }[];
+    enabled: boolean;
   }[];
 }

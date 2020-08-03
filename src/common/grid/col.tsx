@@ -21,8 +21,6 @@ const Col: FunctionComponent<ColProps> = ({ className, size, children, ...otherP
     width: { _: '100%' }
   };
 
-  console.log({ size });
-
   const sizeProps = size
     ? Object.entries(size).reduce(({ flexGrow, flexShrink, flexBasis, maxWidth, width }, [key, value]) => {
         if (value === 'auto') {
